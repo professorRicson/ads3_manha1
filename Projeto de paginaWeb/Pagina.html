@@ -5,61 +5,102 @@
     <meta name="viewport" content="width=device-widht, initial-scale=1.0">
     <title>Perfil do Usuário</title>
     <style>
-        .imagem01{
-          height: 300px;
-          border: 800vh;
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-image: url("01.jpeg");
-          background-color: aliceblue;
-          margin: 1px 1px 1px;
-          padding: 1px;
-          border-radius: 9px;
+        .imagem01 {
+        height: 300px;
+        width: 300px;
+        border: 80vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("01.jpeg");
+        background-color: aliceblue;
+        margin: 1px auto;
+        padding: 1px;
+        border-radius: 9px;
+        display: block;
         }
-        h2{
-          text-align: center ;
-
+        h2, h1, p {
+        text-align: center;
         }
-        h1{
-          text-align: center;
-        }
-        p{
-          text-align: center;
-        }
-        body{
-          background-image: linear-gradient(to top,lightblue,lightblue,steelblue);
-          background-image: url("04.jpeg" );
-          height: 700px;
-          background-size: 100cqmax;
-          background-repeat: no-repeat;
-          
-
-
+        body {
+        background-image: linear-gradient(to top, lightblue, lightblue, steelblue), url("04.jpeg");
+        height: 1080px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url("04.jpeg");
+        margin: 0;
         }
         .habilidade {
-          height: 30px;
-          background-position: center;
-          width: 70vh;
-          margin: 4px;
-          padding: 10px;
-          border-radius: 100px;
-          background-repeat: no-repeat;
-          background-position: center;
-          text-align: center;
-          background-image: linear-gradient(to bottom,lightskyblue,lightblue,steelblue)
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .habilidade ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        }
+        .habilidade ul li {
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        }
+        .habilidade input[type="text"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        }
+        .habilidade button {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 2px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        box-sizing: border-box;
+        }
+        .habilidade button:hover {
+        background-color: #0056b3;
         }
         #contato {
-          color: white;
-          background-color: #007bff;
-          padding: 10px;
-          margin-top: 20px;
-          border-radius: 5px;
+        color: white;
+        background-color: #007bff;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 5px;
+        display: inline-block;
         }
-        span.important{
-          font-weight: bold;
-          color: #007bff;
+        span.important {
+        font-weight: bold;
+        color: #3c7ec5;
         }
-        </style>
+        .div {
+        background-position: center;
+        margin: 0 auto;
+        text-align: center;
+        }
+    </style>
+
 </head>
 <body>
 <h1><strong>APAE</strong></h1>
@@ -69,7 +110,12 @@
 <h2>Habilidades</h2>
 <div class="imagem01"> </div>
 <div class="habilidade">
-    <ul><b>APAE</b></ul>
+    <ul><b>Login</b>
+        <input type="text" placeholder="Usuário">
+        <input type="text" placeholder="Senha">
+        <button>Acessar</button>
+        <button>Voltar</button>
+    </ul>
 </div>
 <div class="habilidade">
     <ul><b>CSS</b></ul>
