@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <style>
+        .imagem01 {
+        height: 300px;
+        width: 300px;
+        border: 80vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("img/01.jpeg");
+        background-color: aliceblue;
+        margin: 1px auto;
+        padding: 1px;
+        border-radius: 9px;
+        display: block;
+        }
+        h2, h1, p {
+        text-align: center;
+        }
+        body {
+        background-image: linear-gradient(to top, lightblue, lightblue, steelblue), url("04.jpeg");
+        height: 1080px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url("img/04.jpeg");
+        margin: 0;
+        }
+        .habilidade {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .habilidade ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        }
+        .habilidade ul li {
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        }
+        .habilidade input[type="text"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #8b5353;
+        border-radius: 5px;
+        box-sizing: border-box;
+        }
+        .habilidade button {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 2px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        box-sizing: border-box;
+        }
+        .habilidade button:hover {
+        background-color: #0056b3;
+        }
+        #contato {
+        color: white;
+        background-color: #007bff;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 5px;
+        display: inline-block;
+        }
+        span.important {
+        font-weight: bold;
+        color: #3c7ec5;
+        }
+        .div {
+        background-position: center;
+        margin: 0 auto;
+        text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+<div class="    imagem01"> </div>
+<h1><strong>APAE</strong></h1>
+<h2>Habilidades</h2>
+<div class="habilidade">
+    <ul><b>Login</b>
+        <input type="text" placeholder="Usuário">
+        <input type="text" placeholder="Senha">
+        <button>Acessar</button>
+        <button>Voltar</button>
+    </ul>
+</div>
+
+
+<div id="contato">
+    <h1>Contatos</h1>
+    <p>Para entrar em contato, por favor, envie um email para joao@exemlo.com</p>
+</div>
+</body>
+</html>
