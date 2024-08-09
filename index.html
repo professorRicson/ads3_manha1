@@ -36,7 +36,7 @@
         }
         .image-container{
             position:relative;
-            width: 300px;
+            width: 1080px;
             height: 300px;
             overflow: hidden;
         }
@@ -50,6 +50,7 @@
             width: 300px;
             height: 300px;
             object-fit: cover;
+            padding: 10px;
             border-radius: 10px;
         }
         .prev, .next {
@@ -59,14 +60,25 @@
             color: white;
             border: none;
             padding: 10px;
-            z-index: 1;
+            z-index: 3;
 
         }
         .prev{
             left: 10px;
+            bottom: 10px;
         }
         .next {
-            right: 10px;
+            right: 0;
+            bottom: 10px;
+        }
+        .conter-image{
+            position: bottom;
+            border-radius: 10;
+        }
+        div.logo{
+            display: flex;
+            position: 10px;
+            padding:
         }
         
     </style>
@@ -80,10 +92,10 @@
 </div>
 <div class="image-container">
     <div class="carrousel-images">
-        <img src="img/02.jpeg" class="top-left" alt="img/Image 1">
-        <img src="img/05.jpeg" class="top-right" alt="Image 2">
-        <img src="img/03.jpeg" class="bottom-left" alt="Image 3">
-        <img src="img/02.jpeg" class="bottom-right" alt="Image 4">
+        <img src="img/02.jpeg" alt="img/Image 1">
+        <img src="img/05.jpeg" alt="Image 2">
+        <img src="img/03.jpeg" alt="Image 3">
+        <img src="img/02.jpeg" alt="Image 4">
     </div>
     <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
     <button class="next" onclick="moveSlide(1)">&#10095;</button>
