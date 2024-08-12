@@ -20,6 +20,7 @@
         }
         h2, h1, p {
         text-align: center;
+        text-size-adjust: 30px;
         }
         body {
         background-image: linear-gradient(to top, lightblue, lightblue, steelblue), url("04.jpeg");
@@ -41,8 +42,8 @@
         height: auto;
         width: 90%;
         max-width: 400px;
-        padding: 20px;
-        margin: auto;
+        padding: 10px;
+        margin: 10px;
         background-color: white;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -85,14 +86,14 @@
         }
         #contato {
         color: white;
-        background-color: #007bff;
-        padding: 10px;
+        padding: 0;
         margin-top: 0;
         border-radius: 5px;
         display: inline-block;
-        background-image: url("img/Instagram.png");
+        background-image: linear-gradient(to top, rgb(219, 173, 230), rgb(195, 141, 226), rgb(165, 135, 248));
         background-position: center;
         background-size: auto;
+        image-rendering: auto;
         }
         span.important {
         font-weight: bold;
@@ -103,10 +104,14 @@
         margin: 0 auto;
         text-align: center;
         }
-        #Inst{
-            height: 512px;
-            width: 512px;
-
+        .Inst{
+            display: flex;
+            height: 120px;
+            width: 120px;
+            border-radius: 10px;
+            background-image: url("img/desing mais ou menos do instagram.png");
+            background-position: center;
+            text-align: center;
         }
     </style>
 
@@ -114,7 +119,7 @@
 <body>
 <div class="imagem01"> </div>
 <h1><strong>APAE</strong></h1>
-<h2>Habilidades</h2>
+<h2>Palmares-PE</h2>
 <div class="habilidade">
     <ul><b>Login</b>
         <input type="text" placeholder="Usuário">
@@ -126,7 +131,7 @@
 
 <div id="contato">
     <h1>Contatos</h1>
-    <p>Onde cada passo é uma conquista entrar em contato com nosso instagram <a href="https://www.instagram.com/apae.palmarespe/"> <img src="Instagram.png"class="Inst"></a></p>
+    <p>Onde cada passo é uma conquista entrar em contato com nosso instagram <a href="https://www.instagram.com/apae.palmarespe/"><img src=" "class="Inst"></a></p>
 </div>
 </body>
 </html>
