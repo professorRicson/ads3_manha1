@@ -6,16 +6,17 @@
     <title>Home</title>
     <style>
         body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100%;
-        margin: 0;
-        border: 0;
-        background-color: lightblue;
-        background-image: url("img/04.jpeg");
-        }
+            background-image: linear-gradient(to top, lightblue, lightblue, steelblue), url("04.jpeg");
+            height: 1080px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url("img/04.jpeg");
+            margin: 0;
+            }
         .button-container {
         display: flex;
         justify-content: space-around;
@@ -41,7 +42,8 @@
             width: 1080px;
             height: 350px;
             overflow: hidden;
-            background-color: rgb(92, 129, 161);
+            background-color: rgb(254, 255, 255);
+            border-radius: 10px;
         }
         .carrousel-images{
             display: flex;
@@ -54,7 +56,7 @@
             height: 300px;
             object-fit: cover;
             padding: 10px;
-            border-radius: 10px;
+            border-radius: 30px;
         }
         .prev, .next {
             position: absolute;
@@ -94,7 +96,7 @@
 </head>
 <body>
 <div class="button-container">
-    <button onclick="window.location.href='#'">Home</button>
+    <button onclick="window.location.href='index.html'">Home</button>
     <button onclick="window.location.href='#'">Doações</button>
     <button onclick="window.location.href='Sobre.html'">Sobre</button>
     <button onclick="window.location.href='Pagina.html'">Login</button>
@@ -105,9 +107,10 @@
         <img src="img/05.jpeg" alt="Image 2">
         <img src="img/03.jpeg" alt="Image 3">
         <img src="img/02.jpeg" alt="Image 4">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    
     </div>
-    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="next" onclick="moveSlide(1)">&#10095;</button>
     
     
 </div>

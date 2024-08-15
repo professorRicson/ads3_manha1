@@ -115,7 +115,7 @@
         }
         .Facb{
             display: flex;
-            background-image: url("img/Facebook.png");
+            background-color: aliceblue;
             height: 50px;
             width: 50px;
             background-repeat: no-repeat;
@@ -131,19 +131,27 @@
         width: 100%;
         margin-bottom: 1px;
         }
+        .Foto{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
         
     </style>
 
 </head>
 <body>
 <div class="imagem01"> </div>
+
 <h1><strong>APAE</strong></h1>
 <h2>Palmares-PE</h2>
 <div class="habilidade">
-    <ul><b>Login</b>
-        <input type="text" placeholder="Usuário">
-        <input type="text" placeholder="Senha">
-        <button>Acessar</button>
+    <p><b>Login</b></p>
+    <div class="Foto"><img src="transferir.jpeg" width="320" height="205"></div>
+    <ul>
+        <input type="email-signup" placeholder="Usuário">
+        <input type="password" placeholder="Senha">
+        <button onclick="window.location.href='Login.html'">Entrar</button>
         <button onclick="window.location.href='index.html'">Voltar</button>
     </ul>
 </div>
@@ -151,8 +159,9 @@
 <div id="contato">
     <h1>Contatos</h1>
     <div class="button-container">
-        <p>Onde cada passo é uma conquista entrar em contato com nosso instagram <a href="https://www.instagram.com/apae.palmarespe/"><img src="img/transferir.jpeg" widht="320" height="205" class="Inst"></a></p>
-    <p><a href="https://www.facebook.com/apae.palmarespe.33"><img src="img/Facebook.png"widht="512" height="512"class="Facb"></a></p>
+        <p>Onde cada passo é uma conquista entrar em contato com nosso instagram </p>
+        <a href="https://www.instagram.com/apae.palmarespe/"><img src="img/transferir.jpeg" widht="320" height="205" class="Inst"></a>
+        <a href="https://www.facebook.com/apae.palmarespe.33"><img src="img/Facebook.png"widht="320" height="205"class="Facb"></a>
     </div>
     
 </div>
