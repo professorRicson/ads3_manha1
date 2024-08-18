@@ -16,6 +16,7 @@
             align-items: center;
             flex-direction: column;
             text-align: center;
+            background-image: url("img/04.jpeg");
         }
         .imagem01 {
             height: 300px;
@@ -23,7 +24,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-image: url("img/01.jpeg");
-            background-color: aliceblue;
+            background-color: rgb(255, 255, 255);
             margin-bottom: 20px;
             border-radius: 9px;
         }
@@ -37,6 +38,9 @@
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
         }
         .habilidade input[type="text"], .habilidade input[type="password"] {
             width: calc(100% - 20px);
@@ -87,32 +91,56 @@
         .Facb {
             background-image: url("img/Facebook.png");
         }
+        .Foto {
+            height: 300px;
+            width: 300px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+            border-radius: 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .habilidade ul{
+            list-style: none;
+            padding:0;
+            margin:0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .habilidade ul li {
+            margin: 1px 0;
+        }
     </style>
 </head>
 <body>
-    <div class="imagem01"></div>
-
-    <h1><strong>APAE</strong></h1>
-    <h2>Palmares-PE</h2>
-    
     <div class="habilidade">
+        <div class="imagem01"></div>
+        <div class="Foto">
+            <img src="img/icone.png" width="300" height="205" alt="Foto">
+        </div>
+        <h1><strong>APAE</strong></h1>
+        <h2>Palmares-PE</h2>
         <p><b>Login</b></p>
-        <div class="Foto"><img src="transferir.jpeg" width="320" height="205" alt="Foto"></div>
         <ul>
             <input type="text" placeholder="Usuário">
             <input type="password" placeholder="Senha">
             <button onclick="window.location.href='Login.html'">Entrar</button>
             <button onclick="window.location.href='index.html'">Voltar</button>
         </ul>
-    </div>
-
-    <div id="contato">
-        <h1>Contatos</h1>
-        <p>Onde cada passo é uma conquista entrar em contato com nosso Instagram</p>
-        <div class="button-container">
-            <a href="https://www.instagram.com/apae.palmarespe/" class="Inst"></a>
-            <a href="https://www.facebook.com/apae.palmarespe.33" class="Facb"></a>
+        <div id="contato">
+            <h1>Contatos</h1>
+            <p>Onde cada passo é uma conquista entrar em contato com nosso Instagram</p>
+            <div class="button-container">
+                <a href="https://www.instagram.com/apae.palmarespe/" class="Inst"></a>
+                <a href="https://www.facebook.com/apae.palmarespe.33" class="Facb"></a>
+            </div>
         </div>
     </div>
+
+    
 </body>
 </html>
