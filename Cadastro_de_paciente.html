@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pacientes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url("img/04.jpeg");
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .patient-list {
+            margin-top: 20px;
+        }
+        .patient-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .patient-list table, .patient-list th, .patient-list td {
+            border: 1px solid #ddd;
+        }
+        .patient-list th, .patient-list td {
+            padding: 8px;
+            text-align: left;
+        }
+        .patient-list th {
+            background-color: #f2f2f2;
+        }
+        .actions button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cadastro de Pacientes</h1>
+    
+    <div class="form-group">
+        <label for="patient-name">Nome:</label>
+        <input type="text" id="patient-name" placeholder="Nome do paciente">
+    </div>
+    <div class="form-group">
+        <label for="patient-cid">CID:</label>
+        <input type="text" id="patient-cid" placeholder="CID">
+    </div>
+    <div class="form-group">
+        <label for="patient-dob">Data de Nascimento:</label>
+        <input type="date" id="patient-dob" placeholder="Data de Nascimento">
+    </div>
+    <div class="form-group">
+        <label for="responsible-name">Nome do Responsável:</label>
+        <input type="text" id="responsible-name" placeholder="Nome do Responsável">
+    </div>
+    <div class="form-group">
+        <label for="relationship-level">Nível de Parentesco:</label>
+        <input type="text" id="relationship-level" placeholder="Nível de Parentesco">
+    </div>
+    <div class="form-group">
+        <label for="family-composition">Composição Familiar:</label>
+        <input type="text" id="family-composition" placeholder="Composição Familiar">
+    </div>
+    <div class="form-group">
+        <label for="bpc">Recebe BPC?</label>
+        <select id="bpc">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="family-expenses">Gastos por Componente Familiar:</label>
+        <input type="number" id="family-expenses" placeholder="Gastos por Componente Familiar">
+    </div>
+    <div class="form-group">
+        <label for="family-income">Renda Per Capita:</label>
+        <input type="number" id="family-income" placeholder="Renda Per Capita">
+    </div>
+    <div class="form-group">
+        <label for="bolsa-familia">Recebe Bolsa Família?</label>
+        <select id="bolsa-familia">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="residence-type">Tipo de Residência:</label>
+        <select id="residence-type">
+            <option value="Própria">Própria</option>
+            <option value="Alugada">Alugada</option>
+            <option value="Cedida">Cedida</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="is-enrolled">Está Matriculado na Rede de Ensino?</label>
+        <select id="is-enrolled">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="education-type">Rede de Ensino:</label>
+        <select id="education-type">
+            <option value="Pública">Pública</option>
+            <option value="Privada">Privada</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="grade">Série:</label>
+        <input type="text" id="grade" placeholder="Série">
+    </div>
+    <div class="form-group">
+        <label for="shift">Turno:</label>
+        <input type="text" id="shift" placeholder="Turno">
+    </div>
+    <div class="form-group">
+        <label for="why-not-studying">Se não estuda, por quê?</label>
+        <input type="text" id="why-not-studying" placeholder="Motivo para não estudar">
+    </div>
+    <div class="form-group">
+        <label for="type-of-care">Tipo de Atendimento:</label>
+        <select id="type-of-care">
+            <option value="Fisioterapia">Fisioterapia</option>
+            <option value="Psicologia">Psicologia</option>
+            <option value="Pintura">Pintura</option>
+            <option value="Psicopedagogia">Psicopedagogia</option>
+            <option value="Musicoterapia">Musicoterapia</option>
+            <option value="Educação Física">Educação Física</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <button id="add-patient">Adicionar Paciente</button>
+    </div>
+    <div class="button-container">
+        <button onclick="window.location.href='index.html'">Home</button>
+    </div>
+    
+    <div class="patient-list">
+        <h2>Lista de Pacientes</h2>
+        <table id="patient-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>CID</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Pacientes serão listados aqui -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="pacientes.js"></script>
+
+</body>
+</html>

@@ -3,52 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Cadastro</title>
     <style>
+        /* Seus estilos aqui */
         body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        max-height: 100%;
-        margin: 0;
-        border: 0;
-        background-color: lightblue;
-        background-image: url("img/04.jpeg");
-        background-repeat:repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background-color: lightblue;
+            background-image: url("img/04.jpeg");
+            background-repeat: repeat;
+            height: 100vh;
+            background-size: cover;
         }
         .button-container {
-        display: flex;
-        justify-content: space-around;
-        width: 80%;
-        margin-bottom: 1px;
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin-bottom: 1px;
         }
         .button-container button {
-        padding: 9px 20px;
-        background-color: #007bff;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        cursor: pointer;
-        font-size: 16px;
-        background-position: top left;
+            padding: 9px 20px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            background-position: top left;
         }
         .button-container button:hover {
-        background-color: #0056b3;
+            background-color: #0056b3;
         }
-        .center-image{
-            position: bottom;
+        .center-image {
             width: 300px;
             height: 300px;
-            border-radius: 0;
             background-color: aliceblue;
             padding: 30px;
             border-radius: 10px;
         }
-        div.logo{
+        .logo {
             display: flex;
-            background-position: center;
-            padding: 100px;
+            justify-content: center;
+            padding: 0;
+            margin-top: 0;
+            background-color: aliceblue;
             border-radius: 10px;
         }
         .contact form {
@@ -63,58 +64,51 @@
             margin-top: 10px;
             color: rgb(0, 0, 0);
         }
-
-.contact form input, .contact form textarea {
-    display: flex;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    background-size: 150px;
-    width: 850px;
-    height: 30px;
-}
-
-.contact form button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: hsl(192, 73%, 47%);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-footer {
-    background-color: rgba(51, 51, 51, 0.8);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-}
-        
+        .contact form input, .contact form textarea {
+            display: flex;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            width: 850px;
+            height: 30px;
+        }
+        .contact form button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: hsl(192, 73%, 47%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
+    
 <div class="button-container">
-    <button onclick="window.location.href='index.html'">Voltar</button>
-    <button onclick="window.location.href='Login.html'">cadastrar</button>
+    <button onclick="window.location.href='Pagina.html'">Voltar</button>
 </div>
+<div class="logo"><img src="img/01.png" class="center-image" alt="Center Image"></div>
+
 <section id="contact" class="contact">
     <div class="container">
-        <h2>Contato</h2>
+        <h2>Funcionário</h2>
         <form id="contact-form">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Enviar</button>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm-password">Confirmar Senha:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <button type="submit">Cadastrar</button>
         </form>
     </div>
 </section>
-<script src="scripts.js"></script>
-<div class="logo"><img src="img/01.png" class="center-image" alt="Center Image"></div>
+<script src="scripts.js">
+   
+</script>
 </body>
 </html>
