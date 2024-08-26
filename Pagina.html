@@ -2,168 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil do Usuário</title>
     <style>
-        .imagem01 {
-        height: 300px;
-        width: 300px;
-        border: 80vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url("img/01.jpeg");
-        background-color: aliceblue;
-        margin: 1px auto;
-        padding: 1px;
-        border-radius: 9px;
-        display: block;
-        }
-        h2, h1, p {
-        text-align: center;
-        text-size-adjust: 30px;
-        }
         body {
-        background-image: linear-gradient(to top, lightblue, lightblue, steelblue), url("04.jpeg");
-        height: 1080px;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-image: url("img/04.jpeg");
-        margin: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-image: url("img/04.jpeg");
+        }
+        .imagem01 {
+            height: 300px;
+            width: 300px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("img/01.jpeg");
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+            border-radius: 9px;
+        }
+        h1, h2 {
+            margin: 10px 0;
         }
         .habilidade {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        width: 90%;
-        max-width: 400px;
-        padding: 10px;
-        margin: 10px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
         }
-        .habilidade ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        text-align: center;
-        }
-        .habilidade ul li {
-        margin: 10px 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        }
-        .habilidade input[type="text"] {
-        width: calc(100% - 20px);
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #8b5353;
-        border-radius: 5px;
-        box-sizing: border-box;
+        .habilidade input[type="text"], .habilidade input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #8b5353;
+            border-radius: 5px;
+            box-sizing: border-box;
         }
         .habilidade button {
-        width: calc(100% - 20px);
-        padding: 10px;
-        margin: 2px;
-        background-color: #007bff;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        cursor: pointer;
-        font-size: 16px;
-        box-sizing: border-box;
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            box-sizing: border-box;
         }
         .habilidade button:hover {
-        background-color: #0056b3;
+            background-color: #0056b3;
         }
         #contato {
-        color: white;
-        padding: 0;
-        margin-top: 0;
-        border-radius: 5px;
-        display: inline-block;
-        background-image: linear-gradient(to top, rgb(219, 173, 230), rgb(195, 141, 226), rgb(165, 135, 248));
-        background-position: center;
-        background-size: auto;
-        image-rendering: auto;
-        }
-        span.important {
-        font-weight: bold;
-        color: #3c7ec5;
-        }
-        .div {
-        background-position: center;
-        margin: 0 auto;
-        text-align: center;
-        }
-        .Inst{
-            display: flex;
-            height: 50px;
-            width: 50px;
-            border-radius: 10px;
-            background-image: url("img/desing mais ou menos do instagram.png");
-            background-position: left;
-            text-align: center;
-        }
-        .Facb{
-            display: flex;
-            background-color: aliceblue;
-            height: 50px;
-            width: 50px;
-            background-repeat: no-repeat;
-            background-position: left;
-            border-radius: 10px;
-            background-size: 150px 150px;
-            border-color: black;
-            
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-image: linear-gradient(to top, rgb(219, 173, 230), rgb(195, 141, 226), rgb(165, 135, 248));
         }
         .button-container {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        margin-bottom: 1px;
-        }
-        .Foto{
             display: flex;
-            justify-content: space-around;
-            width: 100%;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
         }
-        
+        .button-container a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        .Inst {
+            background-image: url("img/transferir.jpeg");
+        }
+        .Facb {
+            background-image: url("img/Facebook.png");
+        }
+        .Foto {
+            height: 300px;
+            width: 300px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+            border-radius: 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .habilidade ul{
+            list-style: none;
+            padding:0;
+            margin:0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .habilidade ul li {
+            margin: 1px 0;
+        }
     </style>
-
 </head>
 <body>
-<div class="imagem01"> </div>
-
-<h1><strong>APAE</strong></h1>
-<h2>Palmares-PE</h2>
-<div class="habilidade">
-    <p><b>Login</b></p>
-    <div class="Foto"><img src="transferir.jpeg" width="320" height="205"></div>
-    <ul>
-        <input type="email-signup" placeholder="Usuário">
-        <input type="password" placeholder="Senha">
-        <button onclick="window.location.href='Login.html'">Entrar</button>
-        <button onclick="window.location.href='index.html'">Voltar</button>
-    </ul>
-</div>
-
-<div id="contato">
-    <h1>Contatos</h1>
-    <div class="button-container">
-        <p>Onde cada passo é uma conquista entrar em contato com nosso instagram </p>
-        <a href="https://www.instagram.com/apae.palmarespe/"><img src="img/transferir.jpeg" widht="320" height="205" class="Inst"></a>
-        <a href="https://www.facebook.com/apae.palmarespe.33"><img src="img/Facebook.png"widht="320" height="205"class="Facb"></a>
+    <div class="habilidade">
+        <div class="imagem01"></div>
+        <div class="Foto">
+            <img src="img/icone.png" width="300" height="205" alt="Foto">
+        </div>
+        <h1><strong>APAE</strong></h1>
+        <h2>Palmares-PE</h2>
+        <p><b>Login</b></p>
+       <form id="login-form">
+           <label for="login-username">Nome de Usuario:</label>
+           <input type="text" id="login-username" name="username" required>
+           <label for="login-password">Senha:</label>
+           <input type="password" id="login-password" name="password" required>
+           <button type="submit">Entrar</button>
+           <button onclick="window.location.href='Cadastro1.html'">cadastrar</button>
+       </form>
+        <div id="contato">
+            <h1>Contatos</h1>
+            <p>Onde cada passo é uma conquista entrar em contato com nosso Instagram</p>
+            <div class="button-container">
+                <a href="https://www.instagram.com/apae.palmarespe/" class="Inst"></a>
+                <a href="https://www.facebook.com/apae.palmarespe.33" class="Facb"></a>
+            </div>
+        </div>
     </div>
+    <script src="scripts.js"></script>
+    <script src="cadastrado.js"></script>
     
-</div>
+    
 </body>
 </html>
